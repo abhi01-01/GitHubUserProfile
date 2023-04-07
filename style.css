@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar:horizontal{
+    width: 3px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: crimson;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+body{
+    background-image: url("https://res.cloudinary.com/shopie/image/upload/v1650713474/327139_wbrpcs.jpg");
+    
+    color: crimson;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+
+.user-form{
+    width: 95%;
+    max-width: 700px;
+}
+
+.user-form input{
+    width: 100%;
+    display: block;
+    background-color: rgb(234, 234, 222);
+    border: 2px solid crimson;
+    border-radius: 10px;
+    color: rgb(13, 20, 223);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px rgba(154, 160, 185, 0.05),
+                0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder{
+    color: rgba(112, 112, 114, 0.5);
+}
+
+.card{
+    max-width: 900px;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 3px solid crimson;
+    height: 200px;
+    width: 200px;
+}
+
+.user-info{
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.user-info ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.user-info ul a:hover{
+    color: crimson;
+    font-style: italic;
+}
+
+.user-info ul a li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: crimson;
+    font-size: solid 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.repo:hover{
+    background-color: white;
+    color: crimson;
+}
+
+@media (max-width:500px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form{
+        max-width: 400px;
+    }
+
+    .user-info{
+        margin-left: 0;
+    }
+}
